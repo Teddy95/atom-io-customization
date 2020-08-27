@@ -32,43 +32,6 @@
 	},
 	{
 		type: 'button'
-		tooltip: 'Fold All'
-		callback: 'editor:fold-all'
-		icon: 'fold'
-	},
-	{
-		type: 'button'
-		tooltip: 'Unfold All'
-		callback: 'editor:unfold-all'
-		icon: 'unfold'
-	},
-	{
-		type: 'button'
-		tooltip: 'Toggle Tree View'
-		callback: 'tree-view:toggle'
-		icon: 'tree'
-		iconset: 'fa'
-	},
-	{
-		type: 'button'
-		tooltip: 'Toggle Minimap'
-		dependency: 'minimap'
-		callback: 'minimap:toggle'
-		icon: 'map'
-		iconset: 'fa'
-	},
-	{
-		type: 'button'
-		tooltip: 'New Terminal'
-		dependency: 'terminal'
-		callback: 'terminal:open'
-		icon: 'terminal'
-	},
-	{
-		type: 'spacer'
-	},
-	{
-		type: 'button'
 		tooltip: 'Markdown Preview'
 		dependency: 'markdown-preview'
 		callback: 'markdown-preview:toggle'
@@ -93,26 +56,11 @@
 	},
 	{
 		type: 'button'
-		tooltip: 'Run Node Script'
-		dependency: 'atom-npm'
-		callback: 'atom-npm:run'
-		icon: 'play-circle'
+		tooltip: 'Google Translate'
+		dependency: 'Google Translate Modal'
+		callback: 'Google Translate Modal: Toggle'
+		icon: 'language'
 		iconset: 'fa'
-	},
-	{
-		type: 'button'
-		tooltip: 'Install Node Dependencies'
-		dependency: 'atom-npm'
-		callback: 'atom-npm:install-dependencies'
-		icon: 'plus-circle'
-		iconset: 'fa'
-	},
-	{
-		type: 'button'
-		tooltip: 'Toggle Dubugger'
-		dependency: 'debugger'
-		callback: 'debugger:toggle'
-		icon: 'bug'
 	},
 	{
 		type: 'spacer'
@@ -158,11 +106,57 @@
 	},
 	{
 		type: 'button'
-		tooltip: 'Google Translate'
-		dependency: 'Google Translate Modal'
-		callback: 'Google Translate Modal: Toggle'
-		icon: 'language'
+		tooltip: 'New Terminal'
+		dependency: 'terminal'
+		callback: 'terminal:open'
+		icon: 'terminal'
+	},
+	{
+		type: 'button'
+		tooltip: 'Attach Dubugger'
+		dependency: 'debugger'
+		callback: 'debugger:show-attach-dialog'
+		icon: 'bug'
+	},
+	{
+		type: 'button'
+		tooltip: 'Toggle Dubugger'
+		dependency: 'debugger'
+		callback: 'debugger:toggle'
+		icon: 'bug'
+	},
+	{
+		type: 'spacer'
+	},
+	{
+		type: 'button'
+		tooltip: 'Fold All'
+		callback: 'editor:fold-all'
+		icon: 'fold'
+	},
+	{
+		type: 'button'
+		tooltip: 'Unfold All'
+		callback: 'editor:unfold-all'
+		icon: 'unfold'
+	},
+	{
+		type: 'button'
+		tooltip: 'Toggle Tree View'
+		callback: 'tree-view:toggle'
+		icon: 'tree'
 		iconset: 'fa'
+	},
+	{
+		type: 'button'
+		tooltip: 'Toggle Minimap'
+		dependency: 'minimap'
+		callback: 'minimap:toggle'
+		icon: 'map'
+		iconset: 'fa'
+	},
+	{
+		type: 'spacer'
 	},
 	{
 		type: 'button'

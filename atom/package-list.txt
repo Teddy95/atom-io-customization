@@ -14,7 +14,9 @@ language-docker@1.1.8
 language-marko@2.10.0
 linter-htmlhint@1.6.3
 linter-jshint@3.1.19
+linter-php@1.6.1
 linter-sass-lint@1.9.0
+markdown-commander@0.1.1
 minimap@4.29.9
 no-title-bar@1.11.9
 one-dark-monokai@0.5.0

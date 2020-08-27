@@ -62,7 +62,9 @@ Packages from <https://atom.io/packages> ⇒ `apm install <package>`
 - language-marko
 - linter-htmlhint
 - linter-jshint
+- linter-php
 - linter-sass-lint
+- markdown-commander
 - minimap
 - no-title-bar
 - one-dark-monokai

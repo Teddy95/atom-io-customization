@@ -1,6 +1,4 @@
 "*":
-  "api-docs":
-    _theme: "Dark"
   "atom-beautify":
     css:
       convert_quotes: "double"
@@ -48,8 +46,9 @@
       end_with_newline: true
       indent_inner_html: true
       indent_size: 4
-  "atom-html-preview": {}
   "atom-ide-ui":
+    "atom-ide-debugger":
+      showDebuggerOnBpSet: false
     "atom-ide-diagnostics-ui":
       showDiagnosticTraces: true
       showDirectoryColumn: true
@@ -61,14 +60,9 @@
       "language-marko"
       "linter-sass-lint"
     ]
-  "atom-toolbar-preferred": {}
-  "atom-touch-bar": {}
   "autocomplete-plus":
     confirmCompletion: "tab"
     minimumWordLength: 2
-  "browser-plus":
-    currentFile: false
-    homepage: "https://devdocs.io"
   "color-picker":
     abbreviateValues: true
     automaticReplace: true
@@ -81,6 +75,7 @@
       "wrap-guide"
       "language-batch"
       "ide-php"
+      "linter-php"
     ]
     packagesWithKeymapsDisabled: [
       "toggle-gutter"
@@ -113,8 +108,6 @@
     strategies: {}
   "flex-tool-bar":
     toolBarConfigurationFilePath: "Users/Andre/.atom"
-  "git-projects":
-    rootPath: "~/Documents/GitHub"
   github:
     gitDiagnostics: true
   "google-translate-modal-English-Version":
@@ -129,111 +122,23 @@
     disableWhenNoJshintrcFileInPath: true
     jshintFileName: "~/.atom/.jshintrc"
     lintInlineJavaScript: true
-  "linter-less":
-    ignoreLessrc: true
-    ignoreUndefinedMixins: false
-    ignoreUndefinedVariables: false
-  "linter-markdown":
-    detectIgnore: false
   "linter-php":
     executablePath: "/usr/bin/php"
   "linter-sass-lint":
     configFile: "~/.atom/.sass-lint.yml"
-  "linter-ui-default":
-    decorateOnTreeView: "Files and Directories"
-    panelHeight: 200
   "markdown-preview":
     useGitHubStyle: true
-  "markdown-writer": {}
-  "metro-ui":
-    themeAccentColor: "#0763d8"
-  minimap:
-    autoToggle: false
-    plugins:
-      linter: true
-      linterDecorationsZIndex: 0
   "no-title-bar":
     automaticTrafficLightsPadding: true
   "one-dark-ui":
     fontSize: 11
     tabCloseButton: "Left"
-  "php-debug":
-    exceptions: {}
-    noPackageInstallPrompt: [
-      "atom-debug-ui"
-    ]
-    server:
-      protocolDebugging: true
-      redirectStderr: true
-      redirectStdout: true
-      serverAddress: "192.168.2.100"
-    showWelcome: false
-    xdebug:
-      pathMaps: "[{\"remotePath\":\"/\",\"localPath\":\"/Users/andre/Documents/GitHub/phptest/\"}]"
-  "slack-chat": {}
   "split-diff": {}
   "terminal-tab": {}
-  "toggle-gutter": {}
   "tool-bar":
     iconSize: "16px"
     useTouchBar: false
-  "tool-bar-markdown-writer": {}
-  touchbar:
-    buttons: "[{\"type\":\"color-picker\",\"name\":\"Config 1559664035233\",\"iconColor\":\"default\"},{\"type\":\"button\",\"name\":\"Config 1541358660400\",\"icon\":\"/Users/andre/.atom/touchbar-icons/new-file.png\",\"label\":\"\",\"iconColor\":\"default\",\"command\":\"application:new-file\",\"elements\":[]},{\"type\":\"button\",\"name\":\"Config 1566511450504\",\"icon\":\"/Users/andre/.atom/touchbar-icons/save.png\",\"command\":\"core:save\"},{\"type\":\"button\",\"name\":\"Config 1541361769422\",\"icon\":\"/Users/andre/.atom/touchbar-icons/run-app.png\",\"command\":\"npm-plus:start\",\"iconColor\":\"default\"},{\"type\":\"button\",\"name\":\"Config 1541361769671\",\"icon\":\"/Users/andre/.atom/touchbar-icons/toggle-sidebar.png\",\"command\":\"tree-view:toggle\"},{\"type\":\"button\",\"name\":\"Config 1541361770880\",\"icon\":\"/Users/andre/.atom/touchbar-icons/settings.png\",\"command\":\"settings-view:open\"}]"
-  "touchbar-utility":
-    backup: '''
-      const { dispatchAction } = require('./dispatchAction');
-      
-      exports.configuration = [{
-        type: 'label',
-        label: 'touchbar-utility rocks! 🎸🤘'
-      }, {
-        type: 'button',
-        label: '💅',
-        clickDispatchAction: 'atom-beautify:beautify-editor',
-        backgroundColor: '#b355d6'
-      }, {
-        type: 'button',
-        icon: 'book',
-        clickDispatchAction: 'editor:toggle-line-comments',
-        backgroundColor: '#4899a8'
-      }, {
-        type: 'group',
-        items: [{
-          type: 'popover',
-          label: 'Popover',
-          items: [{
-            type: 'slider',
-            label: 'Slider',
-            value: 10,
-            minValue: 0,
-            maxValue: 35,
-            change: (newValue) => {
-                console.log('Slider value: ' + String(newValue));
-            }
-          }]
-        }, {
-          type: 'button',
-          label: 'Log to console',
-          click: () => {
-            console.log('Beep boop');
-          },
-          backgroundColor: '#e3e262'
-        }, {
-          type: 'color-picker',
-          availableColors: ['#AA7942', '#FF9300', '#00FDFF'],
-          selectedColor: '#FF9300',
-          change: (color) => {
-            atom.notifications.addInfo(String(color));
-          }
-        }]
-      }]
-      
-    '''
-    lastVersion: "3.3.0"
   "tree-view":
     hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
-  "xatom-debug":
-    showToolbarIcon: false
